@@ -1,12 +1,20 @@
 ﻿using System;
 
-namespace state
+namespace StateSample
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var car = new Car();
+            // car.FillTank();
+            car.TurnKey();
+            car.TurnKey();
+            car.TurnKey();
+            car.Drive();
+            car.Stop();
+            
+            Console.ReadLine();
         }
     }
 }
